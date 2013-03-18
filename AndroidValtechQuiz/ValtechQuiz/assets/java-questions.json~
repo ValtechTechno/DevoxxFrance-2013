@@ -1,0 +1,31 @@
+{"questions":[
+{"title":"Java est un langage…","answers":[{"answer":"0;Interprété"},{"answer":"0;Compilé"},{"answer":"0;Les deux"},{"answer":"0;Ni l'un ni l'autre"}]}
+,{"title":"Quelle phrase au sujet de Java est correcte ?","answers":[{"answer":"0;En Java, les types de base ne sont pas des objets"},{"answer":"0;Java supporte l'héritage multiple entre les classes "},{"answer":"1;En Java, on peut affecter soi-même l'adresse d'un pointeur"},{"answer":"1;Java supporte la surcharge des opérateurs"}]}
+,{"title":"Comment indiquer qu'une classe A hérite d'une classe B?","answers":[{"answer":"0;class A ::B"},{"answer":"1;class A extends B"},{"answer":"0;class A implements B"},{"answer":"0;class A inherit B"}]}
+,{"title":"Que signifie le mot clef 'static' associé à un attribut ?","answers":[{"answer":"1;Que la valeur de cet attribut est constante"},{"answer":"0;Que cet attribut n'est visible que dans la classe où il est défini"},{"answer":"1;Que cet attribut sera toujours passé par valeur"},{"answer":"0;Que cet attribut a une valeur unique pour toutes les instances de la classe"}]}
+,{"title":"Au sujet du mot clef 'abstract', quelle assertion est fausse ?","answers":[{"answer":"1;Une classe abstraite ne peut être instanciée"},{"answer":"1;Une méthode abstraite n'a pas d'implémentation"},{"answer":"0;Une classe abstraite n'a pas forcément de classe fille"},{"answer":"0;Une classe abstraite doit contenir au moins une méthode abstraite"}]}
+,{"title":"Child est une classe héritant de la classe Parent. myChild et myParent sont des instances respectivement de Child et Parent. Quel code ne compile pas ?","answers":[{"answer":"0;'Parent p = new Child();'"},{"answer":"0;'myParent = myChild;'"},{"answer":"1;'myChild = myParent;'"},{"answer":"1;'myChild = (MyChild)myParent;'"}]}
+,{"title":"Que sont les classes du package javax ?","answers":[{"answer":"1;Des ponts Java-ActiveX "},{"answer":"0;Des extensions du langage Java standard "},{"answer":"0;Des classes Java pour X-Windows"},{"answer":"0;Des classes Java multi-plateformes"}]}
+
+,{"title":"Qu'est-ce que c'est?","image":"activity_lifecycle.png","answers":[{"answer":"0;La communication entre activités"},{"answer":"1;Le cycle de vie d'une activité"},{"answer":"0;Le processus de publication d'une application"}]}
+
+,{"title":"Qui est-ce?","image":"bugdroid.png","answers":[{"answer":"0;Mandroid"},{"answer":"1;Bugdroid"},{"answer":"0;Humandroid"}]}
+
+,{"title":"Lequel n'a pas sa place parmi ces choix :","answers":[{"answer":"1;instanceof"},{"answer":"0;select "},{"answer":"0;for"},{"answer":"0;volatile"}]}
+,{"title":"Que signifie le mot clef 'transient' associé à un attribut ?","answers":[{"answer":"0;Rend cet attribut invisible hors du package où il est défini "},{"answer":"0;Cet attibut est à la fois un type de base et un objet "},{"answer":"1;Permet de ne pas le sauvegarder quand on utilise le mécanisme de sérialisation "},{"answer":"0;Rien de tout ça"}]}
+,{"title":"Si la classe B hérite de A qui implémente l'interface K, je peux écrire :","answers":[{"answer":"0;'B i = (K) new A( );'"},{"answer":"1;'A i = new K( );'"},{"answer":"1;'B i = new A( );'"},{"answer":"0;'K i = new B( );'"}]}
+,{"title":"Peut-on utiliser plusieurs blocs catch après un bloc try?","answers":[{"answer":"1;Vrai"},{"answer":"0;Faux"}]}
+,{"title":"Quel est le droit d'accès le plus restrictif pour donner l'accès aux membres d'une autre classe de même package ?","answers":[{"answer":"0;public "},{"answer":"0;default access "},{"answer":"1;abstract "},{"answer":"1;protected "}]}
+,{"title":"En Java, un objet qui n’est plus référencé...","answers":[{"answer":"1;Est immédiatement détruit par la JVM (Java Virtual Machine, ou machine virtuelle)"},{"answer":"0;Reste présent en mémoire et est susceptible d’engendrer une « fuite »"},{"answer":"1;Peut être détruit ou non, au bon vouloir de la JVM"}]}
+,{"title":"Quelle différence existe t-il entre les interfaces List et Set ?","answers":[{"answer":"0;Une List peut contenir une référence null, pas un Set"},{"answer":"0;Un Set peut contenir deux fois le même élément, pas une List"},{"answer":"1;Une List peut contenir deux fois le même élément, pas un Set"},{"answer":"1;Un Set peut contenir une référence null, pas une List"}]}
+
+,{"title":"Que signifie SDK?","answers":[{"answer":"0;Starter Developpement Kit"},{"answer":"1;Software Developpement Kit"},{"answer":"0;Safe Developpement Kit"}]}
+,{"title":"Que signifie APK?","answers":[{"answer":"0;Android Power Kit"},{"answer":"1;Android Application Package"},{"answer":"0;Android Protection Kit"}]}
+,{"title":"Que signifie DIP?","answers":[{"answer":"1;Density Independent Pixels"},{"answer":"0;Digital Image Processing"},{"answer":"0;Data Integrity Program"}]}
+,{"title":"Sur quelle machine virtuelle tourne Android?","answers":[{"answer":"1;Dalvik"},{"answer":"0;Delvik"},{"answer":"0;Dolvik"}]}
+,{"title":"Quel noyau utilise Android?","answers":[{"answer":"1;Linux"},{"answer":"0;Windows"},{"answer":"0;Dalvik"}]}
+,{"title":"Lesquelles de ces méthodes appartiennent à une View?","answers":[{"answer":"1;getPaddingTop"},{"answer":"0;getMarginTop"},{"answer":"0;addView"},{"answer":"1;getParent"}]}
+,{"title":"Lesquelles de ces méthodes appartiennent à une Activity?","answers":[{"answer":"1;addContentView"},{"answer":"1;setContentView"},{"answer":"0;findViewByTag"},{"answer":"1;findViewById"}]}
+,{"title":"Lesquelles de ces méthodes appartiennent à un Fragment?","answers":[{"answer":"0;setContentView"},{"answer":"0;findViewById"},{"answer":"1;getActivity"},{"answer":"1;getFragmentManager"}]}
+,{"title":"À quel moment l'activité meurt-elle?","answers":[{"answer":"0;onPause"},{"answer":"0;onStop"},{"answer":"1;onDestroy"}]}
+]}

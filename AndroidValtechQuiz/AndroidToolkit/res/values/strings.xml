@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Pull To Refresh -->
+    <string name="pull_to_refresh_pull_label">Tirez pour mettre à jour…</string>
+    <string name="pull_to_refresh_release_label">Relâchez pour mettre à jour…</string>
+    <string name="pull_to_refresh_refreshing_label">Mise à jour en cours…</string>
+    <string name="pull_to_refresh_tap_label">Cliquez pour mettre à jour…</string>
+    <string name="pull_to_refresh_last_update_label">Mis à jour le </string>
+
+</resources>

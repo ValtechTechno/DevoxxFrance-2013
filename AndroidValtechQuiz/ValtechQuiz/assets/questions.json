@@ -1,0 +1,27 @@
+{"questions":[
+{"title":"Quand est-ce que Google a lancé son premier téléphone sous Android?","answers":[{"answer":"1;2008"},{"answer":"0;2009"},{"answer":"0;2010"}]}
+,{"title":"Quel est le langage utilisé pour développer avec le sdk Android?","answers":[{"answer":"0;Objective C"},{"answer":"0;PHP"},{"answer":"1;Java"}]}
+,{"title":"Quel est le langage utilisé pour décrire les interfaces Android?","answers":[{"answer":"0;Css"},{"answer":"1;XML"},{"answer":"0;Html"}]}
+,{"title":"Lesquelles sont des versions d'Android","answers":[{"answer":"1;HoneyComb"},{"answer":"0;Apple pie"},{"answer":"1;Cupcake"},{"answer":"0;Crumble"}]}
+,{"title":"Le cycle de vie d'un frament est :","answers":[{"answer":"1;Propre à lui même"},{"answer":"1;Dépendant de l'activité qui l'a lancé"},{"answer":"0;Dépendant des fragments voisins"},{"answer":"0;Indépendant de l'activité qui l'a lancé"}]}
+,{"title":"Lorsqu'un activité se lance, la première méthode appelée est :","answers":[{"answer":"0;onStart"},{"answer":"0;onResume"},{"answer":"1;onCreate"}]}
+,{"title":"Qu'est-ce qui permet d'alimenter une ListView?","answers":[{"answer":"1;Adapter"},{"answer":"0;Fragment"},{"answer":"0;Intent"},{"answer":"0;Activity"}]}
+,{"title":"Qu'est-ce que c'est?","image":"activity_lifecycle.png","answers":[{"answer":"0;La communication entre activités"},{"answer":"1;Le cycle de vie d'une activité"},{"answer":"0;Le processus de publication d'une application"}]}
+,{"title":"Qui est-ce?","image":"bugdroid.png","answers":[{"answer":"0;Mandroid"},{"answer":"1;Bugdroid"},{"answer":"0;Humandroid"}]}
+,{"title":"Qu'est-ce qu'un widget?","answers":[{"answer":"1;Une petite application utilisable depuis l'écran d'accueil"},{"answer":"0;Un bouton ayant un état sélectionné"},{"answer":"0;Un application ayant une interface plus petite que l'écran"}]}
+,{"title":"Que représente ce layout dans cette application?","image":"question_item.png","answers":[{"answer":"0;Le layout du header"},{"answer":"0;Le layout de l'accueil"},{"answer":"1;Le layout d'une réponse"},{"answer":"0;Le layout d'une question"}]}
+,{"title":"Comment utilise-t-on une autre application","answers":[{"answer":"0;Avec un Service"},{"answer":"1;Avec un Intent"},{"answer":"1;En utilisant startActivityForResult"},{"answer":"0;En utilisant findViewById"}]}
+,{"title":"Comment sauvegarde-t-on les paramètres d'une application?","answers":[{"answer":"1;SharedPreferences"},{"answer":"0;SharedSettings"},{"answer":"0;SharedTools"}]}
+,{"title":"Peut-on utiliser les fragments sous Android 2.x?","answers":[{"answer":"0;Oui"},{"answer":"0;Non"},{"answer":"1;Oui en incluant une librairie de compatibilité"}]}
+,{"title":"À quoi servent les AsyncTask?","answers":[{"answer":"1;À exécuter des tâches en parallèle"},{"answer":"0;À exécuter des tâches plus rapidement"},{"answer":"1;À libérer le thread UI"}]}
+,{"title":"Que signifie NDK?","answers":[{"answer":"0;New Developpement Kit"},{"answer":"0;Natural Developpement Kit"},{"answer":"1;Native Developpement Kit"}]}
+,{"title":"Que signifie SDK?","answers":[{"answer":"0;Starter Developpement Kit"},{"answer":"1;Software Developpement Kit"},{"answer":"0;Safe Developpement Kit"}]}
+,{"title":"Que signifie APK?","answers":[{"answer":"0;Android Power Kit"},{"answer":"1;Android Application Package"},{"answer":"0;Android Protection Kit"}]}
+,{"title":"Que signifie DIP?","answers":[{"answer":"1;Density Independent Pixels"},{"answer":"0;Digital Image Processing"},{"answer":"0;Data Integrity Program"}]}
+,{"title":"Sur quelle machine virtuelle tourne Android?","answers":[{"answer":"1;Dalvik"},{"answer":"0;Delvik"},{"answer":"0;Dolvik"}]}
+,{"title":"Quel noyau utilise Android?","answers":[{"answer":"1;Linux"},{"answer":"0;Windows"},{"answer":"0;Dalvik"}]}
+,{"title":"Lesquelles de ces méthodes appartiennent à une View?","answers":[{"answer":"1;getPaddingTop"},{"answer":"0;getMarginTop"},{"answer":"0;addView"},{"answer":"1;getParent"}]}
+,{"title":"Lesquelles de ces méthodes appartiennent à une Activity?","answers":[{"answer":"1;addContentView"},{"answer":"1;setContentView"},{"answer":"0;findViewByTag"},{"answer":"1;findViewById"}]}
+,{"title":"Lesquelles de ces méthodes appartiennent à un Fragment?","answers":[{"answer":"0;setContentView"},{"answer":"0;findViewById"},{"answer":"1;getActivity"},{"answer":"1;getFragmentManager"}]}
+,{"title":"À quel moment l'activité meurt-elle?","answers":[{"answer":"0;onPause"},{"answer":"0;onStop"},{"answer":"1;onDestroy"}]}
+]}
