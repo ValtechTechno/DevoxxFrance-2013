@@ -7,11 +7,15 @@ $(function() {
 	 */
 	var prizes = [
 		"Java\nScript",
+		"Android\n Quiz",
 		"Java",
+		"Java\n Quiz",
 		"Scala",
-		"Quiz",
+		"Android\n Quiz",
 		"Android",
+		"Java\n Quiz",
 		"iOS",
+		"Scala\n Quiz",
 		"Python"];
 
 	var scaleFactor = 0.17; // large decimal is bigger font
