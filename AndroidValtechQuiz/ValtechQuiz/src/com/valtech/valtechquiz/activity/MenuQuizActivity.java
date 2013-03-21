@@ -30,7 +30,7 @@ public class MenuQuizActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("questions.json"));
+				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("questions.json"), "Android");
 			}
 		});
 
@@ -39,7 +39,7 @@ public class MenuQuizActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("java-questions.json"));
+				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("java-questions.json"), "Java");
 			}
 		});
 	}

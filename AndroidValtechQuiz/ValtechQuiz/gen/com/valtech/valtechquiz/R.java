@@ -353,9 +353,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int quiz_result_score_title=0x7f07001d;
         public static final int quiz_result_title=0x7f07001c;
         public static final int quiz_validate=0x7f07001a;
-        public static final int score_email=0x7f070022;
-        public static final int score_score=0x7f070020;
-        public static final int score_time=0x7f070021;
+        public static final int score_email=0x7f070023;
+        public static final int score_score=0x7f070021;
+        public static final int score_theme=0x7f070020;
+        public static final int score_time=0x7f070022;
         public static final int scores_list=0x7f07000a;
         public static final int triangle=0x7f070003;
         public static final int underline=0x7f070004;

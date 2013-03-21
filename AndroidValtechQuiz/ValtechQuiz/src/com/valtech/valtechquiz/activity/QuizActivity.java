@@ -32,10 +32,12 @@ import com.valtech.valtechquiz.model.Score;
 
 public class QuizActivity extends FragmentActivity implements EventQuizContinue.Listener, EventQuizValidate.Listener, EventQuizLoaded.Listener, EventQuizSaveScore.Listener {
 
+	private static final String THEME = "theme";
 	private static final String ARG_QUIZ = "quiz";
 	private ArrayList<Question> questions;
 	private EventBus eventBus;
 
+	private String theme;
 	private String email;
 	private int timeToQuiz = 120000;
 	private int currentTime = timeToQuiz;
@@ -57,10 +59,11 @@ public class QuizActivity extends FragmentActivity implements EventQuizContinue.
 
 	public static int result = 0;
 
-	public static void startQuiz(Activity fromActivity, ArrayList<Question> questions) {
+	public static void startQuiz(Activity fromActivity, ArrayList<Question> questions, String theme) {
 		Class<?> target = QuizActivity.class;
 		Intent intent = new Intent(fromActivity.getBaseContext(), target);
 		intent.putParcelableArrayListExtra(ARG_QUIZ, questions);
+		intent.putExtra(THEME, theme);
 		fromActivity.startActivity(intent);
 	}
 
@@ -70,13 +73,14 @@ public class QuizActivity extends FragmentActivity implements EventQuizContinue.
 	@Override
 	protected void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
-
 		setContentView(R.layout.activity_quiz);
 		// Data.
 		if (bundle == null) {
 			questions = getIntent().getParcelableArrayListExtra(ARG_QUIZ);
+			theme = getIntent().getExtras().getString(THEME);
 			alertEmail();
 		} else {
+			theme = bundle.getString(THEME);
 			questions = bundle.getParcelableArrayList(ARG_QUIZ);
 			currentTime = bundle.getInt("currentTime");
 			email = bundle.getString("email");
@@ -160,6 +164,7 @@ public class QuizActivity extends FragmentActivity implements EventQuizContinue.
 	public void onSaveScore(Score score) {
 		score.setEmail(email);
 		score.setTime(timeToQuiz - currentTime);
+		score.setTheme(theme);
 		MainActivity.datasource.open();
 		MainActivity.datasource.createScore(score);
 		MainActivity.datasource.close();

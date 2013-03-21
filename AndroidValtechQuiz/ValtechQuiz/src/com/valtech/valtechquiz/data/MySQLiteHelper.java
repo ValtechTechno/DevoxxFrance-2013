@@ -12,13 +12,14 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	public static final String COLUMN_SCORE = "score";
 	public static final String COLUMN_TIME = "time";
 	public static final String COLUMN_EMAIL = "email";
+	public static final String COLUMN_THEME = "theme";
 
 	private static final String DATABASE_NAME = "scores.db";
 	private static final int DATABASE_VERSION = 1;
 
 	// Database creation sql statement
 	private static final String DATABASE_CREATE = "create table " + TABLE_SCORES + "(" + COLUMN_ID + " integer primary key autoincrement, " + COLUMN_SCORE + " integer, " + COLUMN_TIME + " integer, "
-			+ COLUMN_EMAIL + " text not null);";
+			+ COLUMN_THEME + " text not null, "+ COLUMN_EMAIL + " text not null);";
 
 	public MySQLiteHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);

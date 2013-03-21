@@ -3,6 +3,7 @@ package com.valtech.valtechquiz.adapter;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -49,6 +50,7 @@ public class ScoresAdapter extends BaseAdapter {
 		if (convertView == null) {
 			item = mLayoutInflater.inflate(R.layout.score_item, null);
 			holder = new ViewHolder();
+			holder.themeTextView = (TextView) item.findViewById(R.id.score_theme);
 			holder.scoreTextView = (TextView) item.findViewById(R.id.score_score);
 			holder.timeTextView = (TextView) item.findViewById(R.id.score_time);
 			holder.emailTextView = (TextView) item.findViewById(R.id.score_email);
@@ -70,18 +72,22 @@ public class ScoresAdapter extends BaseAdapter {
 
 		String score = String.valueOf(scores.get(position).getScore());
 		String email = scores.get(position).getEmail();
+		String theme = scores.get(position).getTheme();
 		
+		holder.themeTextView.setText(theme);
 		holder.scoreTextView.setText(score);
 		holder.timeTextView.setText(convertTime(scores.get(position).getTime()));
 		holder.emailTextView.setText(email);
 		return item;
 	}
 	
+	@SuppressLint("NewApi")
 	private String convertTime(int time) {
 		return String.format("%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(time), TimeUnit.MILLISECONDS.toSeconds(time) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(time)));
 	}
 
 	class ViewHolder {
+		TextView themeTextView;
 		TextView scoreTextView;
 		TextView timeTextView;
 		TextView emailTextView;

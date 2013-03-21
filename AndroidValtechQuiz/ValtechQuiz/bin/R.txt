@@ -103,9 +103,10 @@ int id quiz_result_score 0x7f07001e
 int id quiz_result_score_title 0x7f07001d
 int id quiz_result_title 0x7f07001c
 int id quiz_validate 0x7f07001a
-int id score_email 0x7f070022
-int id score_score 0x7f070020
-int id score_time 0x7f070021
+int id score_email 0x7f070023
+int id score_score 0x7f070021
+int id score_theme 0x7f070020
+int id score_time 0x7f070022
 int id scores_list 0x7f07000a
 int id triangle 0x7f070003
 int id underline 0x7f070004

@@ -4,6 +4,7 @@ public class Score {
 	private long id;
 	private int score;
 	private int time;
+	private String theme;
 	private String email;
 
 	public long getId() {
@@ -38,9 +39,28 @@ public class Score {
 		return email;
 	}
 
-	// Will be used by the ArrayAdapter in the ListView
+	public String getTheme() {
+		return theme;
+	}
+
+	public void setTheme(String theme) {
+		this.theme = theme;
+	}
+
 	@Override
 	public String toString() {
-		return String.valueOf(score);
+		StringBuilder builder = new StringBuilder();
+		builder.append("Score [id=");
+		builder.append(id);
+		builder.append(", score=");
+		builder.append(score);
+		builder.append(", time=");
+		builder.append(time);
+		builder.append(", theme=");
+		builder.append(theme);
+		builder.append(", email=");
+		builder.append(email);
+		builder.append("]");
+		return builder.toString();
 	}
 }
