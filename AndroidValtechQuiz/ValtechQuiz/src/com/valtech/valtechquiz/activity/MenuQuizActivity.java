@@ -51,6 +51,15 @@ public class MenuQuizActivity extends Activity {
 				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("jquery-questions.json"), "JQuery");
 			}
 		});
+		
+		Button html5Button = (Button) findViewById(R.id.button_html5);
+		html5Button.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("html5-questions.json"), "HTML 5");
+			}
+		});
 	}
 
 	private ArrayList<Question> getExampleQuestions(String fileName) {
