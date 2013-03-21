@@ -42,6 +42,15 @@ public class MenuQuizActivity extends Activity {
 				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("java-questions.json"), "Java");
 			}
 		});
+		
+		Button jqueryButton = (Button) findViewById(R.id.button_jquery);
+		jqueryButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				QuizActivity.startQuiz(MenuQuizActivity.this, getExampleQuestions("jquery-questions.json"), "JQuery");
+			}
+		});
 	}
 
 	private ArrayList<Question> getExampleQuestions(String fileName) {

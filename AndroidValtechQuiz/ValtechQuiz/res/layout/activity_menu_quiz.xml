@@ -29,6 +29,15 @@
             android:background="@drawable/valtech_button"
             android:text="Jouer avec Java"
             android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_jquery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/valtech_button"
+            android:text="Jouer avec JQuery"
+            android:textSize="24sp" />
     </LinearLayout>
 
 </LinearLayout>
