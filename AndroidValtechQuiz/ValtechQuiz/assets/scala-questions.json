@@ -1,10 +1,9 @@
 {"questions":[
 {"title":"A quel paradigme appartient Scala","answers":[{"answer":"0;Programmation orienté objet"},{"answer":"0;Programmation orienté classe"},{"answer":"1;Programmation fonctionnelle "},{"answer":"0;Programmation déclarative"}]}
-,{"title":"Quel est le résultat de cette expression? List(1, 2, 3) flatMap(x => List(x, 4))","answers":[{"answer":"0;En Java, les types de base ne sont pas des objets"},{"answer":"0;Java supporte l'héritage multiple entre les classes "},{"answer":"0;En Java, on peut affecter soi-même l'adresse d'un pointeur"},{"answer":"1;Java supporte la surcharge des opérateurs"}]}
+,{"title":"Quel est le résultat de cette expression? List(1, 2, 3) flatMap(x => List(x, 4))","answers":[{"answer":"0;List(5,6,7)"},{"answer":"1;List(1,4,2,4,3,4)"},{"answer":"0;List(4,4,4)"},{"answer":"0;List(1,4) List(2,4) List(3,4)"}]}
+,{"title":"Quel est le résultat de cette expression? "abcde" ensuring (_.length > 3)","answers":[{"answer":"1;abcde"},{"answer":"0;de"},{"answer":"0;true"},{"answer":"0;Assertion error"}]}
+,{"title":"Comment peut on représenter une liste vide ?","answers":[{"answer":"0;Null"},{"answer":"1;Nil"},{"answer":"0;None"},{"answer":"0;Nothing"}]}
 
-
-,{"title":"Comment indiquer qu'une classe A hérite d'une classe B?","answers":[{"answer":"0;class A::B"},{"answer":"1;class A extends B"},{"answer":"0;class A implements B"},{"answer":"0;class A inherit B"}]}
-,{"title":"Que signifie le mot clef 'static' associé à un attribut ?","answers":[{"answer":"0;Que la valeur de cet attribut est constante"},{"answer":"0;Que cet attribut n'est visible que dans la classe où il est défini"},{"answer":"0;Que cet attribut sera toujours passé par valeur"},{"answer":"1;Que cet attribut a une valeur unique pour toutes les instances de la classe"}]}
 ,{"title":"Au sujet du mot clef 'abstract', quelle assertion est fausse ?","answers":[{"answer":"0;Une classe abstraite ne peut être instanciée"},{"answer":"0;Une méthode abstraite n'a pas d'implémentation"},{"answer":"1;Une classe abstraite n'a pas forcément de classe fille"},{"answer":"0;Une classe abstraite doit contenir au moins une méthode abstraite"}]}
 ,{"title":"Child est une classe héritant de la classe Parent. myChild et myParent sont des instances respectivement de Child et Parent. Quel code ne compile pas ?","answers":[{"answer":"0;'Parent p = new Child();'"},{"answer":"0;'myParent = myChild;'"},{"answer":"1;'myChild = myParent;'"},{"answer":"0;'myChild = (MyChild)myParent;'"}]}
 ,{"title":"Que sont les classes du package javax ?","answers":[{"answer":"0;Des ponts Java-ActiveX "},{"answer":"0;Des extensions du langage Java standard "},{"answer":"0;Des classes Java pour X-Windows"},{"answer":"1;Des classes Java multi-plateformes"}]}
