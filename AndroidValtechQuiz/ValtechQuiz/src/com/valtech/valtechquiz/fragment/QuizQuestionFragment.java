@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.BitmapFactory.Options;
@@ -208,6 +209,7 @@ public class QuizQuestionFragment extends BaseFragment implements EventQuizChron
 		uiChrono.setText(convertTime(time));
 	}
 
+	@SuppressLint("NewApi")
 	private String convertTime(int time) {
 		return String.format("%02d:%02d", TimeUnit.MILLISECONDS.toMinutes(time), TimeUnit.MILLISECONDS.toSeconds(time) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(time)));
 	}
