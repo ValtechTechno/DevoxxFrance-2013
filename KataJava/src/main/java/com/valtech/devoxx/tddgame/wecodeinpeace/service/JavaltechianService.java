@@ -37,7 +37,12 @@ public class JavaltechianService implements IJavaltechianService{
 	}
 	
 	public int getPowerByName(String name) {
-		//TODO improve me
-		return 0;
+		int result=name.length();
+		if (name.contains("java"))
+			result+=5;
+		if (name.endsWith("voxx"))
+			result*=10;
+		return result;
+	
 	}
 }
