@@ -60,7 +60,48 @@ public class WarService implements IWarService {
 	
 	public SpaceShip andTheWinnerIs(SpaceShip javaltechianShip,
 			SpaceShip cobolianShip) {
-		//TODO improve me
-		return null;
+		List<Javaltechian> jList = sortJavaltechiansForBattle(javaltechianShip.getPopulation());
+		List<Javaltechian> cList = sortJavaltechiansForBattle(cobolianShip.getPopulation());
+		if (jList.isEmpty())
+			return cobolianShip;
+		if (cList.isEmpty())
+			return javaltechianShip;		
+		Javaltechian jWarrior = jList.get(0);
+		Javaltechian cWarrior = cList.get(0);
+		if (ironArmService.getWinnerOfTwoJavaltechians(jWarrior, cWarrior).equals(cWarrior)){
+			jList.remove(0);
+			if (jList.isEmpty())
+				return cobolianShip;
+			cList.remove(0);
+			cWarrior.setPower((int) (cWarrior.getPower()*0.85));
+			cList.add(cWarrior);
+		}
+		if (ironArmService.getWinnerOfTwoJavaltechians(jWarrior, cWarrior).equals(jWarrior)){
+			cList.remove(0);
+			if (cList.isEmpty())
+				return javaltechianShip;
+			jList.remove(0);
+			jWarrior.setPower((jWarrior.getPower()*0.8));
+			jList.add(jWarrior);
+		}
+		Javaltechian cobolianCaptain = spaceshipService.getCobolianCaptainByPopulation(cList);
+		Javaltechian javaltechianCaptain = spaceshipService.getJavaltechianCaptainByPopulation(jList);
+		if (javaltechianShip.equals(this.getBestPositionnedShip(javaltechianShip, cobolianShip, javaltechianCaptain, cobolianCaptain))){
+			for (Javaltechian javaltechian : jList) {
+				javaltechian.setPower(javaltechian.getPower()*0.02);
+			}
+			for (Javaltechian javaltechian : cList) {
+				javaltechian.setPower(javaltechian.getPower()*0.01);
+			}
+		}
+		if (cobolianShip.equals(this.getBestPositionnedShip(javaltechianShip, cobolianShip, javaltechianCaptain, cobolianCaptain))){
+			for (Javaltechian javaltechian : cList) {
+				javaltechian.setPower(javaltechian.getPower()*0.02);
+			}
+			for (Javaltechian javaltechian : jList) {
+				javaltechian.setPower(javaltechian.getPower()*0.01);
+			}
+		}	
+		return andTheWinnerIs(javaltechianShip, cobolianShip);
 	}
 }
