@@ -28,7 +28,15 @@ public class SpaceshipService implements ISpaceshipService {
 	
 	public Javaltechian getJavaltechianCaptainByPopulation(
 			List<Javaltechian> javaltechians) {
-		//TODO improve me
-		return null;
+	 	if (javaltechians.size() == 1){
+			return javaltechians.get(0);
+		}
+		double d1 =  Math.sqrt(javaltechians.get(0).getPower()) - 2 * javaltechians.get(0).getAge();
+		double d2 =  Math.sqrt(javaltechians.get(1).getPower()) - 2 * javaltechians.get(1).getAge();	
+		if (d1 > d2)
+			javaltechians.remove(1);
+		else
+			javaltechians.remove(0);
+		return getJavaltechianCaptainByPopulation(javaltechians);
 	}
 }
