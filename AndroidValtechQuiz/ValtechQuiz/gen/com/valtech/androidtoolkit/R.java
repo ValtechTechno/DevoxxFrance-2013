@@ -11,8 +11,8 @@ public final class R {
 		public static final int vertical = 0x7f070001;
 		public static final int pull_to_refresh_progress = 0x7f070011;
 		public static final int triangle = 0x7f070003;
-		public static final int pull_to_refresh_image = 0x7f070012;
 		public static final int horizontal = 0x7f070000;
+		public static final int pull_to_refresh_image = 0x7f070012;
 		public static final int underline = 0x7f070004;
 		public static final int none = 0x7f070002;
 		public static final int pull_to_refresh_progress_layout = 0x7f070010;
@@ -23,14 +23,14 @@ public final class R {
 	public static final class anim {
 		public static final int slide_out_left = 0x7f040005;
 		public static final int fixed = 0x7f040000;
-		public static final int hidden = 0x7f040001;
 		public static final int menu_out_toleft = 0x7f040003;
+		public static final int hidden = 0x7f040001;
 		public static final int slide_in_right = 0x7f040004;
 		public static final int menu_in_fromleft = 0x7f040002;
 	}
 	public static final class style {
-		public static final int Theme_PageIndicatorDefaults = 0x7f0b0000;
 		public static final int Widget_TitlePageIndicator = 0x7f0b0003;
+		public static final int Theme_PageIndicatorDefaults = 0x7f0b0000;
 		public static final int Widget = 0x7f0b0001;
 		public static final int Widget_CirclePageIndicator = 0x7f0b0002;
 		public static final int Widget_TabPageIndicator = 0x7f0b0004;
@@ -61,11 +61,11 @@ public final class R {
 		public static final int default_circle_indicator_page_color = 0x7f05000c;
 	}
 	public static final class string {
-		public static final int pull_to_refresh_last_update_label = 0x7f060004;
 		public static final int pull_to_refresh_refreshing_label = 0x7f060002;
+		public static final int pull_to_refresh_last_update_label = 0x7f060004;
+		public static final int pull_to_refresh_pull_label = 0x7f060000;
 		public static final int pull_to_refresh_release_label = 0x7f060001;
 		public static final int pull_to_refresh_tap_label = 0x7f060003;
-		public static final int pull_to_refresh_pull_label = 0x7f060000;
 	}
 	public static final class layout {
 		public static final int pull_to_refresh_header = 0x7f030007;
@@ -104,8 +104,8 @@ public final class R {
 		public static final int CirclePageIndicator_orientation = 3;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f020009;
 		public static final int ic_pulltorefresh_arrow = 0x7f02000a;
+		public static final int ic_launcher = 0x7f020009;
 		public static final int ic_pulltorefresh_arrow_old = 0x7f02000b;
 	}
 	public static final class attr {
@@ -123,8 +123,8 @@ public final class R {
 		public static final int footerIndicatorUnderlinePadding = 0x7f010013;
 		public static final int titlePadding = 0x7f010019;
 		public static final int strokeWidth = 0x7f01000d;
-		public static final int footerIndicatorHeight = 0x7f010012;
 		public static final int vpiTabPageIndicatorStyle = 0x7f010004;
+		public static final int footerIndicatorHeight = 0x7f010012;
 		public static final int orientation = 0x7f010009;
 		public static final int centered = 0x7f010006;
 		public static final int vpiTabTextStyle = 0x7f010005;
