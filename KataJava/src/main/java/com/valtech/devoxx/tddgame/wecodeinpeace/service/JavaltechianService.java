@@ -35,4 +35,9 @@ public class JavaltechianService implements IJavaltechianService{
 		}
 		return prime;
 	}
+	
+	public int getPowerByName(String name) {
+		//TODO improve me
+		return 0;
+	}
 }
