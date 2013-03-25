@@ -44,7 +44,14 @@ public class SpaceshipService implements ISpaceshipService {
 	
 	public Javaltechian getCobolianCaptainByPopulation(
 			List<Javaltechian> javaltechians) {
-		//TODO improve me
-		return null;	
+		ironArmService = new IronArmService();
+		if (javaltechians.size() == 1){
+			return javaltechians.get(0);
+		}
+		if (javaltechians.get(0).equals(ironArmService.getWinnerOfTwoJavaltechians(javaltechians.get(0), javaltechians.get(1))))
+			javaltechians.remove(1);
+		else
+			javaltechians.remove(0);
+		return getCobolianCaptainByPopulation(javaltechians);
 	}
 }
