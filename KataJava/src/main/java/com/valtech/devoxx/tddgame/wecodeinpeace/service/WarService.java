@@ -9,7 +9,11 @@ public class WarService implements IWarService {
 
 	public Javaltechian getWarDeclarerBetweenTwoJavaltechians(
 			Javaltechian javaltechianCaptain, Javaltechian cobolianCaptain) {
-		//TODO improve me
-		return null;
+		double coeffJ = javaltechianCaptain.getPower()/javaltechianCaptain.getAge();
+		double coeffC = cobolianCaptain.getPower()/cobolianCaptain.getAge();
+		if (coeffC > coeffJ)
+			return cobolianCaptain;
+		else 
+			return javaltechianCaptain;
 	}
 }
