@@ -39,8 +39,23 @@ public class WarService implements IWarService {
 
 	public List<Javaltechian> sortJavaltechiansForBattle(
 			List<Javaltechian> javaltechians) {
-		//TODO improve me
-		return null;
+		int limit = javaltechians.size();
+		boolean permutation = true;
+		Javaltechian objOne; 
+		Javaltechian objTwo; 
+		while (permutation) {
+			permutation = false;
+			for (int i =0; i<limit - 1; i++) {
+				objOne = (Javaltechian)javaltechians.get(i);
+				objTwo = (Javaltechian)javaltechians.get(i+1);
+				if (objOne.getPower() > objTwo.getPower()) {
+					javaltechians.set(i+1, objOne);
+					javaltechians.set(i, objTwo);
+					permutation = true;
+				}
+			}
+		}
+		return(javaltechians);
 	}
 	
 	
