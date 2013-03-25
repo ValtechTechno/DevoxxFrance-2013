@@ -21,8 +21,18 @@ public class WarService implements IWarService {
 	public SpaceShip getBestPositionnedShip(SpaceShip javaltechianShip,
 			SpaceShip cobolianShip, Javaltechian javaltechianCaptain,
 			Javaltechian cobolianCaptain) {
-		//TODO improve me
-		return null;
+		double discriminant1 = Math.pow(javaltechianCaptain.getAge(), 2) - 
+				4 * 
+				javaltechianShip.getPopulation().size() * 
+				spaceshipService.getMaxCapacityByName(javaltechianShip.getName());
+		double discriminant2 = Math.pow(cobolianCaptain.getAge(), 2) - 
+				4 * 
+				cobolianShip.getPopulation().size() * 
+				spaceshipService.getMaxCapacityByName(cobolianShip.getName());
+		if (discriminant1 > discriminant2)
+			return javaltechianShip;
+		else 
+			return cobolianShip;
 	}
 
 }
