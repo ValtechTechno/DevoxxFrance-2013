@@ -9,4 +9,5 @@ public interface IWarService {
 	 public Javaltechian getWarDeclarerBetweenTwoJavaltechians(Javaltechian javaltechianCaptain, Javaltechian cobolianCaptain);
 	 public SpaceShip getBestPositionnedShip(SpaceShip javaltechianShip, SpaceShip cobolianShip, Javaltechian javaltechianCaptain, Javaltechian cobolianCaptain);
 	 public List<Javaltechian> sortJavaltechiansForBattle(List<Javaltechian> javaltechians);
+	 public SpaceShip andTheWinnerIs(SpaceShip javaltechianShip, SpaceShip cobolianShip);
 }

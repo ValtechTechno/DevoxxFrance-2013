@@ -58,5 +58,9 @@ public class WarService implements IWarService {
 		return(javaltechians);
 	}
 	
-	
+	public SpaceShip andTheWinnerIs(SpaceShip javaltechianShip,
+			SpaceShip cobolianShip) {
+		//TODO improve me
+		return null;
+	}
 }
