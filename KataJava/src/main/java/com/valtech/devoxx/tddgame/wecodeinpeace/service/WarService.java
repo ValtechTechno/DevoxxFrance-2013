@@ -1,5 +1,7 @@
 package com.valtech.devoxx.tddgame.wecodeinpeace.service;
 
+import java.util.List;
+
 import com.valtech.devoxx.tddgame.wecodeinpeace.model.Javaltechian;
 import com.valtech.devoxx.tddgame.wecodeinpeace.model.SpaceShip;
 
@@ -35,4 +37,11 @@ public class WarService implements IWarService {
 			return cobolianShip;
 	}
 
+	public List<Javaltechian> sortJavaltechiansForBattle(
+			List<Javaltechian> javaltechians) {
+		//TODO improve me
+		return null;
+	}
+	
+	
 }
