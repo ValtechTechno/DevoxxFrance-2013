@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF353535"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/valtech_button"
+            android:text="Jouer avec Android"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_java"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/valtech_button"
+            android:text="Jouer avec Java"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_html5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/valtech_button"
+            android:text="Jouer avec HTML5"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_jquery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/valtech_button"
+            android:text="Jouer avec JQuery"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

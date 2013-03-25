@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="header_color">#FF999999</color>
+    <color name="gray_navbar">#FFF3F3F3</color>
+    <color name="update_color">#FF888888</color>
+
+</resources>
