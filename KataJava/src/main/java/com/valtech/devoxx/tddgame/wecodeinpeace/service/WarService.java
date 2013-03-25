@@ -1,6 +1,7 @@
 package com.valtech.devoxx.tddgame.wecodeinpeace.service;
 
 import com.valtech.devoxx.tddgame.wecodeinpeace.model.Javaltechian;
+import com.valtech.devoxx.tddgame.wecodeinpeace.model.SpaceShip;
 
 public class WarService implements IWarService {
 
@@ -16,4 +17,12 @@ public class WarService implements IWarService {
 		else 
 			return javaltechianCaptain;
 	}
+
+	public SpaceShip getBestPositionnedShip(SpaceShip javaltechianShip,
+			SpaceShip cobolianShip, Javaltechian javaltechianCaptain,
+			Javaltechian cobolianCaptain) {
+		//TODO improve me
+		return null;
+	}
+
 }
