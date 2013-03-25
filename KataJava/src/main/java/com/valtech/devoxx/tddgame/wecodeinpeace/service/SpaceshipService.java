@@ -6,6 +6,8 @@ import com.valtech.devoxx.tddgame.wecodeinpeace.model.Javaltechian;
 
 public class SpaceshipService implements ISpaceshipService {
 	
+	private IronArmService ironArmService;
+
 	public int getMaxCapacityByName(String name){ 
 		if (name.toLowerCase().startsWith("bo"))
 			 return 8*10;
@@ -38,5 +40,11 @@ public class SpaceshipService implements ISpaceshipService {
 		else
 			javaltechians.remove(0);
 		return getJavaltechianCaptainByPopulation(javaltechians);
+	}
+	
+	public Javaltechian getCobolianCaptainByPopulation(
+			List<Javaltechian> javaltechians) {
+		//TODO improve me
+		return null;	
 	}
 }
