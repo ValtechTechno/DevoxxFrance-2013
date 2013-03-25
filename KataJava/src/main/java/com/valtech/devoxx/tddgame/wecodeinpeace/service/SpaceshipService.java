@@ -1,5 +1,9 @@
 package com.valtech.devoxx.tddgame.wecodeinpeace.service;
 
+import java.util.List;
+
+import com.valtech.devoxx.tddgame.wecodeinpeace.model.Javaltechian;
+
 public class SpaceshipService implements ISpaceshipService {
 	
 	public int getMaxCapacityByName(String name){ 
@@ -20,5 +24,11 @@ public class SpaceshipService implements ISpaceshipService {
 		if (name.toLowerCase().startsWith("sh"))
 			 return 16*10;
 		else return 10;
+	}
+	
+	public Javaltechian getJavaltechianCaptainByPopulation(
+			List<Javaltechian> javaltechians) {
+		//TODO improve me
+		return null;
 	}
 }
