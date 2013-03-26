@@ -7,7 +7,7 @@ body {
 }
 
 .logo img{
-	width:30%;
+	width:20%;
 	float:right;
 }
 
@@ -17,5 +17,9 @@ body {
 
 .info h1{
 	font-size:3em;
-	font-family: "fantasy";
+	font-family: "Helvetica";
+}
+
+.info h2{
+	font-family: "Georgia";
 }

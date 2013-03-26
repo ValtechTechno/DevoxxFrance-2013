@@ -11,12 +11,11 @@ $(function() {
 		"JQuery\n Quiz",
 		"Java\n Kata",
 		"Android\n Quiz",
-		"Java\n Quiz",
-		"C#\n Kata"];
+		"Java\n Quiz"];
 
 	var scaleFactor = 0.17; // large decimal is bigger font
 	var fontColor = "#FFFFFF" // color of prize text
-	var color = ["#8dc653", "#78bde7", "#d4de57", "#71afac"]; // alternating gaming peice colors
+	var color = ["#00adfa", "#353636"]; // alternating gaming peice colors
 	var random = [744, 3478]; // [minimum number of rotations in degrees, max number of rotations]
 	var seconds = 8000;  // how long animation runs
 	var colorArrow = ["#000000", "#000000", 4]; // [fill color, border color, border width]
