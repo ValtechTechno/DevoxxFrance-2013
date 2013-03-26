@@ -11,7 +11,9 @@ $(function() {
 		"JQuery\n Quiz",
 		"Java\n Kata",
 		"Android\n Quiz",
-		"Java\n Quiz"];
+		"Java\n Quiz",
+		"Scala\n Quiz",
+		"Java\n Kata"];
 
 	var scaleFactor = 0.17; // large decimal is bigger font
 	var fontColor = "#FFFFFF" // color of prize text
